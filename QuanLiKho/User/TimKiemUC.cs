@@ -11,32 +11,29 @@ using QuanLiKho.Function;
 
 namespace QuanLiKho.User
 {
-    public partial class TimKiemUC : UserControl
+    public partial class KhoUC : UserControl
     {
-        
-        public TimKiemUC()
+
+
+        public KhoUC()
         {
             InitializeComponent();
-            
+
         }
 
-        private void TimKiemUC_Load(object sender, EventArgs e)
+        private void KhoUC_Load(object sender, EventArgs e)
         {
-            
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

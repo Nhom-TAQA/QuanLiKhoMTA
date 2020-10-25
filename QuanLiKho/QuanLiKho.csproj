@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Function\Dataconnection.cs" />
+    <Compile Include="Function\LoaiHangHoa.cs" />
+    <Compile Include="Function\NhapHangfn.cs" />
+    <Compile Include="Function\ThongKe.cs" />
+    <Compile Include="Function\TimKiem.cs" />
+    <Compile Include="Function\XuatHangfn.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
