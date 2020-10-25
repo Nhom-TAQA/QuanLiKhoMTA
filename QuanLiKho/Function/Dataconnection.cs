@@ -11,7 +11,7 @@ namespace QuanLiKho.Function
     {
         public SqlConnection GetSqlConnection()
         {
-            return new SqlConnection();
+            return new SqlConnection("Data Source=DESKTOP-M2D74G7;Initial Catalog=quanlikhoMTA;Integrated Security=True");
         }
     }
 }

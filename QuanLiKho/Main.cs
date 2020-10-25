@@ -71,5 +71,11 @@ namespace QuanLiKho
             pnMain.Controls.Clear();
             pnMain.Controls.Add(new LoaiHangHoaUC());
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            pnMain.Controls.Clear();
+            pnMain.Controls.Add(new TrangChu());
+        }
     }
 }
