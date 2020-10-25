@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Function\Dataconnection.cs" />
     <Compile Include="Function\TimKiem.cs" />
+    <Compile Include="Function\XuatHangfn.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
