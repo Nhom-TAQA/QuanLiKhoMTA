@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Thực hiện : Trần Sang Anh
+                     Trịnh Thành Trung
+                      Nguyễn Trọng Quyết
+                      Vũ Hoàng Anh
+                      Phạm Công Tú
+                      PhouSy</value>
+  </data>
 </root>
