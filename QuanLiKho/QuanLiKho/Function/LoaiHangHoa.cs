@@ -20,13 +20,7 @@ namespace QuanLiKho.Function
 
         public DataTable GetAllHH()
         {
-            con.Open();
-            string sql = " SELECT * FROM HangHoa";
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            return dt;
+            
         }
 
         public bool ThemHangHoa(string MaHH,string TenHH, string Gia)
