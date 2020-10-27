@@ -31,7 +31,11 @@ namespace QuanLiKho.Function
 
         public bool ThemHangHoa(string MaHH,string TenHH, string Gia)
         {
-            d = new SqlCommand(sql1, con);
+            con.Open();
+            try
+            {
+                string sql1 = "insert into HangHoa(MaHH,TenHH,GiaSP)values('" + MaHH + "',N'" + TenHH + "'," + Gia + ")";
+                SqlCommand cmd = new SqlCommand(sql1, con);
                 cmd.ExecuteNonQuery();
             }
             catch
