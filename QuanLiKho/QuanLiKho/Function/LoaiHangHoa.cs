@@ -56,9 +56,7 @@ namespace QuanLiKho.Function
             con.Open();
             try
             {
-                string sql1 = "UPDATE  HangHoa SET TenHH = N'" + TenHH + "',GiaSP=" + Gia +  " where MaHH='" + MaHH + "'";
-                SqlCommand cmd = new SqlCommand(sql1, con);
-                cmd.ExecuteNonQuery();
+              
                 
 
             }
