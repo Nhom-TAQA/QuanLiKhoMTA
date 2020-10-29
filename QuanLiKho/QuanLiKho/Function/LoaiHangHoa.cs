@@ -77,21 +77,7 @@ namespace QuanLiKho.Function
         public bool XoaPhieuNhap(string MaHH)
         {
 
-            con.Open();
-            try
-            {
-
-                string sql2 = "DELETE HangHoa  Where MaHH = '" + MaHH + "'";
-                SqlCommand cmd2 = new SqlCommand(sql2, con);
-                cmd2.ExecuteNonQuery();
-
-            }
-            catch
-            {
-
-
-                con.Close();
-                return false;
+            
             }
 
 
