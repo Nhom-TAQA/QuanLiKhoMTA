@@ -23,13 +23,7 @@ namespace QuanLiKho.Function
         }
         public DataTable GetAllPhieuNhap()
         {
-            con.Open();
-            string sql = " SELECT pn.MaLoHang,lh.MaHH,NgayNhap as Ngay,lh.NSX,lh.HSD,SoLuong,(SELECT GiaSP FROM HangHoa hh WHERE hh.MaHH=lh.MaHH) as Gia FROM PhieuNhap pn,LoHang lh where pn.MaLoHang=lh.MaLoHang";
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            return dt;
+            
         }
         public DataTable GetAllPhieuXuat()
         {
