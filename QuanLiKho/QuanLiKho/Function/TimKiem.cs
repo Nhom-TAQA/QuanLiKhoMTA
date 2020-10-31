@@ -33,27 +33,6 @@ namespace QuanLiKho.Function
         }
         public DataTable GetAllPhieuXuat()
         {
-            con.Open();
-            string sql = " SELECT pn.MaLoHang,lh.MaHH,NgayXuat as Ngay,lh.NSX,lh.HSD,SoLuong,(SELECT GiaSP FROM HangHoa hh WHERE hh.MaHH=lh.MaHH) as Gia FROM PhieuXuat pn,LoHang lh where pn.MaLoHang=lh.MaLoHang";
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            return dt;
-        }
-        public List<string> GetAllMaHH()
-        {
-            List<string> ds = new List<string>(0);
-            con.Open();
-            string sql = "SELECT MaHH FROM HangHoa";
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            foreach (DataRow dr in dt.Rows)
-            {
-                ds.Add(dr.ItemArray[0].ToString());
-            }
 
             return ds;
 
