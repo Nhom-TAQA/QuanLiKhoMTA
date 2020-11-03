@@ -13,7 +13,16 @@ namespace QuanLiKho.User
 {
     public partial class NhapHangUC : UserControl
     {
-        N
+        NhapHangfn da;
+        string MaLoHang1, MaHH1, NgayNhap1, NSX1, HSD1, SoLuong1, Gia1;
+        public NhapHangUC()
+        {
+            InitializeComponent();
+            da = new NhapHangfn();
+        }
+
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
