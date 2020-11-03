@@ -69,7 +69,24 @@ namespace QuanLiKho.Function
             return dt;
         }
         public DataTable TimKiemDatePN(string TuNgay, string DenNgay)
-        
+        {
+            con.Open();
+            string sql = " SELECT pn.MaLoHang,lh.MaHH,NgayNhap as Ngay,lh.NSX,lh.HSD,SoLuong,(SELECT GiaSP FROM HangHoa hh WHERE hh.MaHH=lh.MaHH) as Gia FROM PhieuNhap pn,LoHang lh where pn.MaLoHang=lh.MaLoHang and HSD >= '" + TuNgay + "' and HSD <= '" + DenNgay + "'";
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+
+        public DataTable TimKiemHHPX(string MaHH)
+        {
+            con.Open();
+            string sql = " SELECT pn.MaLoHang,lh.MaHH,NgayXuat as Ngay,lh.NSX,lh.HSD,SoLuong,(SELECT GiaSP FROM HangHoa hh WHERE hh.MaHH=lh.MaHH) as Gia FROM PhieuXuat pn,LoHang lh where pn.MaLoHang=lh.MaLoHang and MaHH = '" + MaHH + "'";
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
             return dt;
         }
         public DataTable TimKiemDatePX(string TuNgay, string DenNgay)
